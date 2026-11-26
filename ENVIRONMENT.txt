@@ -13,7 +13,10 @@ Comparison policy: five_site_certificate.txt (exact interval certificate) and is
 multiplicities) must match byte for byte. In the other CSV files every non-numeric field must match and every number
 must agree within relative 1e-6; values below 1e-6 in magnitude (error diagnostics and small differences) must agree
 within absolute 1e-7. On Linux CI (Python 3.12, same package versions) the largest relative change in a reported value
-was about 2e-8 (finite_size.csv at L = 4096) and error diagnostics changed at the 1e-8 level. Interpreter versions are not part of any output. The regenerated figure PDFs are not compared byte for
+was about 2e-8 (finite_size.csv at L = 4096) and error diagnostics changed at the 1e-8 level. For finite_size.csv the tolerance is relative 1e-3: its L = 4096 entries for the cubic chain's one-body
+control sum level energies of order 1e-10 from a dense eigensolver, and the column Q^G/Q changed from 1.09585 to
+1.09568 between two Linux CI runners. The last digit of Table 4's entry 1.0959 is therefore platform-sensitive; the
+value 1.096 quoted in the text, and all other Table 4 entries at their printed precision, are not. Interpreter versions are not part of any output. The regenerated figure PDFs are not compared byte for
 byte (they embed creation dates).
 On the release host every output except ising_checks.csv was byte-identical to the shipped file; ising_checks.csv
 agreed within the policy (difference in final digits only).

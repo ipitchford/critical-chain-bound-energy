@@ -101,7 +101,10 @@ same under `python -O`. **Comparison policy:** `five_site_certificate.txt` (exac
 match and every number must agree within relative 1e-6 (absolute 1e-7 for values below 1e-6, which are error
 diagnostics or small differences), because floating-point and BLAS ordering change trailing digits across platforms
 (on Linux CI the largest relative change in a reported value was about 2e-8, at L = 4096). Every number quoted in
-the paper has at most seven significant digits. The figure PDFs embed
+the paper has at most seven significant digits. For finite_size.csv the tolerance is relative 1e-3: its L = 4096 entries for the cubic chain's one-body
+control sum level energies of order 1e-10 from a dense eigensolver, and the column Q^G/Q changed from 1.09585 to
+1.09568 between two Linux CI runners. The last digit of Table 4's entry 1.0959 is therefore platform-sensitive; the
+value 1.096 quoted in the text, and all other Table 4 entries at their printed precision, are not. The figure PDFs embed
 creation dates and are compared visually. On the release host every output except `ising_checks.csv` (relative
 difference about 1e-15) was byte-identical to the shipped file. GitHub CI applies this policy on Linux and runs a
 negative control.
