@@ -1,0 +1,18 @@
+Release replay environment (26 November 2026, macOS arm64 host)
+Interpreter (printed inside the run, not assumed): `uv run --python 3.12 --with numpy==2.3.5 --with scipy==1.17.0
+--with mpmath==1.3.0 --with matplotlib==3.10.8` resolved to CPython 3.12.11 with numpy 2.3.5, scipy 1.17.0,
+mpmath 1.3.0 and matplotlib 3.10.8.
+Packages: requirements.txt. No compiler. Working directory: the package root (scripts write results/ and figures/
+next to code/). Flags: python3 -I -B -O. OPENBLAS_NUM_THREADS=1, MPLBACKEND=Agg. Run time: about one minute for all
+ten scripts, one CPU. No random numbers.
+GitHub CI: ubuntu-latest, actions/setup-python 3.12, packages from requirements.txt. One job: manifest; all ten
+scripts under -O in a fresh copy of the package; comparison with the shipped outputs by tools/compare_results.py under
+the policy below; a negative control (the expected D_3 in general_dispersion_check.py changed from 11.2023136908 to
+11.3023136908 must fail under -O with "CHECK FAILED: D_3"); working tree unchanged.
+Comparison policy: five_site_certificate.txt (exact interval certificate) and ising_boundary.csv (integer
+multiplicities) must match byte for byte. In the other CSV files every non-numeric field must match and every number
+must agree within relative 1e-9; values below 1e-6 in magnitude (floating-point noise diagnostics) must agree within
+absolute 1e-9. Interpreter versions are not part of any output. The regenerated figure PDFs are not compared byte for
+byte (they embed creation dates).
+On the release host every output except ising_checks.csv was byte-identical to the shipped file; ising_checks.csv
+agreed within the policy (difference in final digits only).

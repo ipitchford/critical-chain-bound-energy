@@ -1,0 +1,38 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it using these metadata."
+type: software
+title: "The energy an isolated half of a critical chain cannot give up: conformal amplitudes, dispersion, and the cost of conserving particle number"
+abstract: "Unrefereed research candidate. The bound energy of an isolated half of a critical chain (the energy that no unitary on the half can extract) obeys Q ~ 3v S^2/(2 pi c L) in a regulated boundary conformal field theory and in the open hopping and critical Ising chains; in a family of free-fermion chains sharing one critical ground state it scales as S^(m+1)/L^m, set by the flattest zero of the block dispersion, so the conjectured law of Mula et al. is not universal; in one range-three chain, unrestricted, number-conserving and one-body controls leave residuals of different orders."
+authors:
+  - name: "Anonymous"
+version: "0.1.0-candidate"
+date-released: "2026-11-26"
+doi: "10.5281/zenodo.24553557"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.24553557"
+    description: "This version"
+  - type: doi
+    value: "10.5281/zenodo.24553556"
+    description: "All versions (concept DOI)"
+repository-code: "https://github.com/ipitchford/critical-chain-bound-energy"
+url: "https://evidencepress.org/releases/critical-chain-bound-energy/"
+license: CC0-1.0
+keywords:
+  - bound energy
+  - ergotropy
+  - entanglement entropy
+  - critical spin chains
+  - boundary conformal field theory
+  - free fermions
+  - quantum thermodynamics
+preferred-citation:
+  type: article
+  title: "The energy an isolated half of a critical chain cannot give up: conformal amplitudes, dispersion, and the cost of conserving particle number"
+  authors:
+    - name: "Anonymous"
+  year: 2026
+  doi: "10.5281/zenodo.24553557"
+  publisher:
+    name: "Zenodo"
+  notes: "Version 0.1.0-candidate; unrefereed"

@@ -1,0 +1,291 @@
+{
+ "schemaVersion": "1.0",
+ "provenance": "Compiled 26 November 2026 for 0.1.0-candidate from the dated searches of the internal AI-assisted review and source retrieval (24-25 November 2026), refs.bib, REVIEW_SUMMARY.md and the paper (Sections 1 and 9). It records scrutiny performed, not historical priority.",
+ "contributionMap": [
+  {
+   "claim": "Conformal law Q_L ~ 3v S_L^2/(2 pi c L) for a regulated boundary CFT, with boundary correction and thermal form of the passive state",
+   "unit": "statement",
+   "paperLocation": "Theorems 3-4, Corollary 5",
+   "searches": [
+    {
+     "date": "2026-11-25",
+     "corpus": "Semantic Scholar citations of Mula et al. 2023 (12 papers to September 2026); arXiv searches; the Evidence Press corpus",
+     "query": "ergotropy OR bound energy OR passive energy, with critical, CFT, Lifshitz, spin chain; citers of Mula et al. (Phys. Rev. B 107, 075116)"
+    },
+    {
+     "date": "2026-11-25",
+     "corpus": "the cited works, obtained from arXiv and read: Mula et al. 2023, Mitra-Srivastava 2025, Hartmann-Kavanagh-Vandoren 2021, Fagotti-Calabrese 2011, Calabrese-Lefevre 2008, Goldstein-Sela 2018, Allahverdyan-Balian-Nieuwenhuizen 2004, Cardy 2004/2008, Alba-Calabrese-Tonni 2018, Deift-Its-Krasovsky 2011, Bringmann-Jennings-Shaffer-Mahlburg 2023, and the other cited works",
+     "query": "which forms of the conjecture are stated; which passive energy (one-body or many-body) is computed; what is proved and what is numerical; the external entanglement input and its hypotheses"
+    }
+   ],
+   "closestPriorWork": "Mula et al. 2023 (conjecture, free-fermion formula); Calabrese-Lefevre (entanglement spectrum counting); Cardy (boundary CFT)",
+   "verdict": "new-in-bounded-search",
+   "verdictNote": "first proof of form (B) in a model; conjecture credited to Mula et al."
+  },
+  {
+   "claim": "Lattice law Q_L ~ D(m,A) S_L^(m+1)/L^m for every sign-preserving polynomial dispersion sharing the hopping ground state",
+   "unit": "statement",
+   "paperLocation": "Theorem 6, Corollary 7",
+   "searches": [
+    {
+     "date": "2026-11-25",
+     "corpus": "Semantic Scholar citations of Mula et al. 2023 (12 papers to September 2026); arXiv searches; the Evidence Press corpus",
+     "query": "ergotropy OR bound energy OR passive energy, with critical, CFT, Lifshitz, spin chain; citers of Mula et al. (Phys. Rev. B 107, 075116)"
+    },
+    {
+     "date": "2026-11-25",
+     "corpus": "the cited works, obtained from arXiv and read: Mula et al. 2023, Mitra-Srivastava 2025, Hartmann-Kavanagh-Vandoren 2021, Fagotti-Calabrese 2011, Calabrese-Lefevre 2008, Goldstein-Sela 2018, Allahverdyan-Balian-Nieuwenhuizen 2004, Cardy 2004/2008, Alba-Calabrese-Tonni 2018, Deift-Its-Krasovsky 2011, Bringmann-Jennings-Shaffer-Mahlburg 2023, and the other cited works",
+     "query": "which forms of the conjecture are stated; which passive energy (one-body or many-body) is computed; what is proved and what is numerical; the external entanglement input and its hypotheses"
+    }
+   ],
+   "closestPriorWork": "Hartmann-Kavanagh-Vandoren (same ground-state entanglement for odd Lifshitz dispersions)",
+   "verdict": "new-in-bounded-search",
+   "verdictNote": "entanglement fact credited; bound-energy law new; refutes form (A)"
+  },
+  {
+   "claim": "Conformal form holds iff nonzero Fermi velocity and no other zero; coefficient 3v/(2 pi)",
+   "unit": "statement",
+   "paperLocation": "Corollary 8",
+   "searches": [
+    {
+     "date": "2026-11-25",
+     "corpus": "Semantic Scholar citations of Mula et al. 2023 (12 papers to September 2026); arXiv searches; the Evidence Press corpus",
+     "query": "ergotropy OR bound energy OR passive energy, with critical, CFT, Lifshitz, spin chain; citers of Mula et al. (Phys. Rev. B 107, 075116)"
+    },
+    {
+     "date": "2026-11-25",
+     "corpus": "the cited works, obtained from arXiv and read: Mula et al. 2023, Mitra-Srivastava 2025, Hartmann-Kavanagh-Vandoren 2021, Fagotti-Calabrese 2011, Calabrese-Lefevre 2008, Goldstein-Sela 2018, Allahverdyan-Balian-Nieuwenhuizen 2004, Cardy 2004/2008, Alba-Calabrese-Tonni 2018, Deift-Its-Krasovsky 2011, Bringmann-Jennings-Shaffer-Mahlburg 2023, and the other cited works",
+     "query": "which forms of the conjecture are stated; which passive energy (one-body or many-body) is computed; what is proved and what is numerical; the external entanglement input and its hypotheses"
+    }
+   ],
+   "closestPriorWork": "Mula et al. Eq. (42) for unit hopping; Mitra-Srivastava (law beyond conformal symmetry, deviation at all-to-all pairing)",
+   "verdict": "new-in-bounded-search",
+   "verdictNote": "unit-hopping case credited"
+  },
+  {
+   "claim": "Critical Ising chain: N Q/S^2 -> 12/pi",
+   "unit": "statement",
+   "paperLocation": "Corollary 9",
+   "searches": [
+    {
+     "date": "2026-11-25",
+     "corpus": "Semantic Scholar citations of Mula et al. 2023 (12 papers to September 2026); arXiv searches; the Evidence Press corpus",
+     "query": "ergotropy OR bound energy OR passive energy, with critical, CFT, Lifshitz, spin chain; citers of Mula et al. (Phys. Rev. B 107, 075116)"
+    },
+    {
+     "date": "2026-11-25",
+     "corpus": "the cited works, obtained from arXiv and read: Mula et al. 2023, Mitra-Srivastava 2025, Hartmann-Kavanagh-Vandoren 2021, Fagotti-Calabrese 2011, Calabrese-Lefevre 2008, Goldstein-Sela 2018, Allahverdyan-Balian-Nieuwenhuizen 2004, Cardy 2004/2008, Alba-Calabrese-Tonni 2018, Deift-Its-Krasovsky 2011, Bringmann-Jennings-Shaffer-Mahlburg 2023, and the other cited works",
+     "query": "which forms of the conjecture are stated; which passive energy (one-body or many-body) is computed; what is proved and what is numerical; the external entanglement input and its hypotheses"
+    }
+   ],
+   "closestPriorWork": "Mula et al. (exact diagonalisation up to N = 14); Igloi-Juhasz (XY-Ising relation)",
+   "verdict": "new-in-bounded-search",
+   "verdictNote": "slope not universal (form (C))"
+  },
+  {
+   "claim": "Crossover under a linear perturbation",
+   "unit": "statement",
+   "paperLocation": "Theorem 10",
+   "searches": [
+    {
+     "date": "2026-11-25",
+     "corpus": "Semantic Scholar citations of Mula et al. 2023 (12 papers to September 2026); arXiv searches; the Evidence Press corpus",
+     "query": "ergotropy OR bound energy OR passive energy, with critical, CFT, Lifshitz, spin chain; citers of Mula et al. (Phys. Rev. B 107, 075116)"
+    },
+    {
+     "date": "2026-11-25",
+     "corpus": "the cited works, obtained from arXiv and read: Mula et al. 2023, Mitra-Srivastava 2025, Hartmann-Kavanagh-Vandoren 2021, Fagotti-Calabrese 2011, Calabrese-Lefevre 2008, Goldstein-Sela 2018, Allahverdyan-Balian-Nieuwenhuizen 2004, Cardy 2004/2008, Alba-Calabrese-Tonni 2018, Deift-Its-Krasovsky 2011, Bringmann-Jennings-Shaffer-Mahlburg 2023, and the other cited works",
+     "query": "which forms of the conjecture are stated; which passive energy (one-body or many-body) is computed; what is proved and what is numerical; the external entanglement input and its hypotheses"
+    }
+   ],
+   "closestPriorWork": "none found",
+   "verdict": "new-in-bounded-search",
+   "verdictNote": ""
+  },
+  {
+   "claim": "Control classes: one-body cost ratio R_z; charge conservation free for x^z; three orders in a range-three chain",
+   "unit": "statement",
+   "paperLocation": "Theorems 11, 13; Corollaries 12, 14",
+   "searches": [
+    {
+     "date": "2026-11-25",
+     "corpus": "Semantic Scholar citations of Mula et al. 2023 (12 papers to September 2026); arXiv searches; the Evidence Press corpus",
+     "query": "ergotropy OR bound energy OR passive energy, with critical, CFT, Lifshitz, spin chain; citers of Mula et al. (Phys. Rev. B 107, 075116)"
+    },
+    {
+     "date": "2026-11-25",
+     "corpus": "the cited works, obtained from arXiv and read: Mula et al. 2023, Mitra-Srivastava 2025, Hartmann-Kavanagh-Vandoren 2021, Fagotti-Calabrese 2011, Calabrese-Lefevre 2008, Goldstein-Sela 2018, Allahverdyan-Balian-Nieuwenhuizen 2004, Cardy 2004/2008, Alba-Calabrese-Tonni 2018, Deift-Its-Krasovsky 2011, Bringmann-Jennings-Shaffer-Mahlburg 2023, and the other cited works",
+     "query": "which forms of the conjecture are stated; which passive energy (one-body or many-body) is computed; what is proved and what is numerical; the external entanglement input and its hypotheses"
+    }
+   ],
+   "closestPriorWork": "Mitsuhashi-Kaneko-Sagawa and Onuma-Kalu-Mann (work extraction under symmetry or Gaussian operations); Goldstein-Sela (charge-resolved entanglement)",
+   "verdict": "new-in-bounded-search",
+   "verdictNote": "context credited"
+  },
+  {
+   "claim": "Method: rank-matching (isentropic) lemma plus level counting and control of rare Schmidt ranks",
+   "unit": "method",
+   "paperLocation": "Lemma 1, Remark 2, proofs",
+   "searches": [
+    {
+     "date": "2026-11-25",
+     "corpus": "Semantic Scholar citations of Mula et al. 2023 (12 papers to September 2026); arXiv searches; the Evidence Press corpus",
+     "query": "ergotropy OR bound energy OR passive energy, with critical, CFT, Lifshitz, spin chain; citers of Mula et al. (Phys. Rev. B 107, 075116)"
+    },
+    {
+     "date": "2026-11-25",
+     "corpus": "the cited works, obtained from arXiv and read: Mula et al. 2023, Mitra-Srivastava 2025, Hartmann-Kavanagh-Vandoren 2021, Fagotti-Calabrese 2011, Calabrese-Lefevre 2008, Goldstein-Sela 2018, Allahverdyan-Balian-Nieuwenhuizen 2004, Cardy 2004/2008, Alba-Calabrese-Tonni 2018, Deift-Its-Krasovsky 2011, Bringmann-Jennings-Shaffer-Mahlburg 2023, and the other cited works",
+     "query": "which forms of the conjecture are stated; which passive energy (one-body or many-body) is computed; what is proved and what is numerical; the external entanglement input and its hypotheses"
+    }
+   ],
+   "closestPriorWork": "Allahverdyan-Balian-Nieuwenhuizen (passive states); Bringmann et al. (Ingham Tauberian theorem); Fagotti-Calabrese and Deift-Its-Krasovsky (external Renyi input)",
+   "verdict": "partially-known-cited",
+   "verdictNote": "combination new; components credited"
+  }
+ ],
+ "sourcesReadInFull": [
+  {
+   "citation": "Mula, B. et al. (2023), Ergotropy and entanglement in critical spin chains, Phys. Rev. B 107, 075116",
+   "usedFor": "statement of the conjecture in three forms; one-body formula",
+   "readWhat": "whole paper (abstract, Eqs. (34), (42), discussion, Sec. V)",
+   "date": "2026-11-25",
+   "evidenceLocator": "https://doi.org/10.1103/PhysRevB.107.075116"
+  },
+  {
+   "citation": "Mitra, A. and Srivastava, S. C. L. (2025), New J. Phys. 27, 084601",
+   "usedFor": "credit: law beyond conformal symmetry; deviation at all-to-all pairing",
+   "readWhat": "whole paper (Eq. (22), Figs. 3-4, Secs. on XY chains)",
+   "date": "2026-11-25",
+   "evidenceLocator": "https://doi.org/10.1088/1367-2630/adf2d2"
+  },
+  {
+   "citation": "Hartmann, D., Kavanagh, K. and Vandoren, S. (2021), SciPost Phys. 11, 031",
+   "usedFor": "odd Lifshitz dispersions share the ground-state entanglement",
+   "readWhat": "main results",
+   "date": "2026-11-25",
+   "evidenceLocator": "https://doi.org/10.21468/SciPostPhys.11.2.031"
+  },
+  {
+   "citation": "Fagotti, M. and Calabrese, P. (2011), J. Stat. Mech. P01017; Deift, Its and Krasovsky (2011), Ann. Math. 174",
+   "usedFor": "external input: boundary Renyi asymptotics of the open hopping chain",
+   "readWhat": "Fagotti-Calabrese pp. 8-9 (Eq. (38)) and the theorems it rests on",
+   "date": "2026-11-25",
+   "evidenceLocator": "https://doi.org/10.1088/1742-5468/2011/01/P01017"
+  },
+  {
+   "citation": "Calabrese, P. and Lefevre, A. (2008), Phys. Rev. A 78, 032329; Goldstein, M. and Sela, E. (2018), Phys. Rev. Lett. 120, 200602",
+   "usedFor": "entanglement-spectrum distribution; charge-resolved entanglement",
+   "readWhat": "main results",
+   "date": "2026-11-25",
+   "evidenceLocator": "https://doi.org/10.1103/PhysRevA.78.032329"
+  },
+  {
+   "citation": "Allahverdyan, A. E., Balian, R. and Nieuwenhuizen, Th. M. (2004), Europhys. Lett. 67",
+   "usedFor": "ergotropy and passive states",
+   "readWhat": "whole paper",
+   "date": "2026-11-25",
+   "evidenceLocator": "https://doi.org/10.1209/epl/i2004-10101-2"
+  },
+  {
+   "citation": "Cardy, J. (2004, revised 2008), Boundary conformal field theory, arXiv:hep-th/0411189v2",
+   "usedFor": "strip spectra and boundary entropies",
+   "readWhat": "relevant sections",
+   "date": "2026-11-25",
+   "evidenceLocator": "https://arxiv.org/abs/hep-th/0411189"
+  }
+ ],
+ "limitationTriage": [
+  {
+   "limitation": "Interacting lattice chains (e.g. Heisenberg) not treated",
+   "closingQuestion": "Does form (B) hold for an interacting lattice chain?",
+   "triedOrSearched": "considered in the revision round; small-system exact diagonalisation adds nothing asymptotic",
+   "estimatedCost": "new research",
+   "cheap": false,
+   "decision": "OPEN",
+   "reasonOpen": "Open problem (i) in Section 9",
+   "whyNotClosedNow": "Open problem (i) in Section 9"
+  },
+  {
+   "limitation": "One external input (boundary Renyi asymptotics of the open hopping chain)",
+   "closingQuestion": "Can the input be avoided?",
+   "triedOrSearched": "input named and its source theorems read",
+   "estimatedCost": "new research",
+   "cheap": false,
+   "decision": "OPEN",
+   "reasonOpen": "stated in abstract, Appendix A and Discussion",
+   "whyNotClosedNow": "stated in abstract, Appendix A and Discussion"
+  },
+  {
+   "limitation": "Lattice termination with different boundary condition",
+   "closingQuestion": "Does Theorem 4 hold on the lattice?",
+   "triedOrSearched": "continuum illustration only",
+   "estimatedCost": "new research",
+   "cheap": false,
+   "decision": "OPEN",
+   "reasonOpen": "Open problem (ii)",
+   "whyNotClosedNow": "Open problem (ii)"
+  },
+  {
+   "limitation": "Slow logarithmic convergence of constants",
+   "closingQuestion": "What are the next-order corrections?",
+   "triedOrSearched": "finite-size table to L = 4096",
+   "estimatedCost": "new research",
+   "cheap": false,
+   "decision": "OPEN",
+   "reasonOpen": "Open problem (iii)",
+   "whyNotClosedNow": "Open problem (iii)"
+  },
+  {
+   "limitation": "Idealised controls",
+   "closingQuestion": "What remains under depth- or locality-limited controls?",
+   "triedOrSearched": "not attempted",
+   "estimatedCost": "new research",
+   "cheap": false,
+   "decision": "OPEN",
+   "reasonOpen": "Open problem (iv)",
+   "whyNotClosedNow": "Open problem (iv)"
+  },
+  {
+   "limitation": "Scripts must fail under python -O",
+   "closingQuestion": "Do the checks survive optimisation?",
+   "triedOrSearched": "explicit require(); negative control exits 1 under -O",
+   "estimatedCost": "hours",
+   "cheap": true,
+   "decision": "CLOSED",
+   "reasonOpen": "",
+   "whyNotClosedNow": ""
+  },
+  {
+   "limitation": "Literature search of limited scope",
+   "closingQuestion": "Would a wider search change attribution?",
+   "triedOrSearched": "database and arXiv searches; load-bearing sources read",
+   "estimatedCost": "library time",
+   "cheap": false,
+   "decision": "OPEN",
+   "reasonOpen": "priority claimed only within the searches",
+   "whyNotClosedNow": "priority claimed only within the searches"
+  }
+ ],
+ "extensionScout": {
+  "by": "the internal review and the lead",
+  "date": "2026-11-25",
+  "proposals": [
+   "general rank-matching lemma",
+   "general sign-preserving dispersion theorem",
+   "if-and-only-if condition for the conformal law",
+   "finite-size table",
+   "Heisenberg/XXZ test",
+   "lattice fixed termination",
+   "next-order corrections"
+  ],
+  "actions": [
+   "done: Lemma 1",
+   "done: Theorem 6",
+   "done: Corollary 8",
+   "done: Table 4",
+   "attempted, not landed: open problem",
+   "attempted, not landed: open problem",
+   "attempted, not landed: open problem"
+  ]
+ }
+}

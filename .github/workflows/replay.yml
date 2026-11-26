@@ -1,0 +1,53 @@
+# SPDX-License-Identifier: MIT
+name: Replay
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+env:
+  PYTHONDONTWRITEBYTECODE: "1"
+  OPENBLAS_NUM_THREADS: "1"
+  MPLBACKEND: Agg
+jobs:
+  replay:
+    name: Manifest; all scripts under python -O; output comparison; negative control
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Check MANIFEST.sha256
+        run: sha256sum -c MANIFEST.sha256
+      - name: Install pinned packages
+        run: python3 -m pip install -r requirements.txt
+      - name: Run every script in a fresh copy and compare with the shipped outputs
+        run: |
+          D="$RUNNER_TEMP/pkg"; mkdir -p "$D/results" "$D/figures"; cp -R code "$D/"; cd "$D"
+          python3 -I -c 'import sys, numpy, scipy, mpmath, matplotlib; print(sys.version, numpy.__version__, scipy.__version__, mpmath.__version__, matplotlib.__version__)'
+          set -e
+          P="python3 -I -B -O"
+          $P code/check_passive_fermi.py > results/passive_fermi.csv
+          $P code/check_asymmetric_touch.py > results/asymmetric_touch.csv
+          $P code/certify_five_sites.py > results/five_site_certificate.txt
+          $P code/check_boundary_characters.py > results/ising_boundary.csv
+          $P code/reproduce_ising.py
+          $P code/ising_mesoscopic.py
+          $P code/crossover.py
+          $P code/dispersion.py
+          $P code/general_dispersion_check.py > results/general_dispersion.csv
+          $P code/finite_size.py > results/finite_size.csv
+          ls figures/crossover.pdf figures/dispersion.pdf
+          # Policy (README.md, ENVIRONMENT.txt, REPLAY_RECEIPT.md): exact files byte-identical; other numbers within
+          # relative 1e-9 (absolute 1e-9 below 1e-6).
+          python3 -I -B -O "$GITHUB_WORKSPACE/tools/compare_results.py" "$GITHUB_WORKSPACE/results" results
+      - name: Negative control (expected D_3 changed must fail under python -O)
+        run: |
+          N="$RUNNER_TEMP/neg"; mkdir -p "$N/results" "$N/figures"; cp -R code "$N/"; cd "$N"
+          sed -i 's/mp.mpf("11.2023136908")/mp.mpf("11.3023136908")/' code/general_dispersion_check.py
+          grep -q '11.3023136908' code/general_dispersion_check.py
+          if python3 -I -B -O code/general_dispersion_check.py > out.txt 2>&1; then echo "changed constant not detected"; exit 1; fi
+          grep "CHECK FAILED: D_3" out.txt; echo "negative control detected"
+      - name: Working tree unchanged
+        run: test -z "$(git status --porcelain)"

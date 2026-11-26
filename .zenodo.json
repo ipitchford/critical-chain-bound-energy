@@ -1,0 +1,119 @@
+{
+ "title": "The energy an isolated half of a critical chain cannot give up: conformal amplitudes, dispersion, and the cost of conserving particle number",
+ "upload_type": "publication",
+ "publication_type": "preprint",
+ "description": "<p><strong>Unrefereed research candidate.</strong> Cut a critical quantum chain in its ground state in two and isolate one half. Because the half is entangled with the rest, it is left in a mixed state above its own ground state. Unitary operations on the half alone can extract part of that excess energy as work, but not all of it; the remainder is the bound energy. Mula and colleagues (Phys. Rev. B 107, 075116) computed it for the free-fermion hopping chain, found that it scales as the square of the entanglement entropy divided by the block length, and conjectured the same law for critical chains in general.</p><p><strong>Results.</strong> (1) The law is proved, with coefficient 3v/(2&pi;c) in front of S<sup>2</sup>/L (velocity v, central charge c), for a regulated boundary conformal field theory and directly for the open hopping and critical Ising lattice chains; at equal velocity the Ising slope is twice the hopping slope, so the conjectured number is not universal. (2) For a family of free-fermion chains that all share the hopping chain's ground state, the bound energy is determined exactly to leading order: it is fixed by the flattest zero of the block's one-particle dispersion, and the conjectured form holds if and only if the dispersion crosses the Fermi level with nonzero velocity and has no other zero. Criticality of the ground state therefore does not determine the bound energy. (3) In one range-three chain, unrestricted, particle-number-conserving and one-body number-conserving operations leave residuals of different orders, (log L)<sup>3</sup>/L<sup>2</sup>, (log L)/L and (log L)<sup>2</sup>/L.</p><p><strong>Limits.</strong> Free-fermion lattice chains and an idealised conformal model only; interacting chains such as the Heisenberg chain remain open. The lattice proofs use one external input, the known boundary R&eacute;nyi asymptotics of the open hopping chain. The operations are idealised (unlimited coherent control of the block). All coefficients are limits as L grows; exact finite-size computations up to L = 4096 show which separations are already visible and which converge only logarithmically slowly.</p><p><strong>Contents.</strong> The paper (LaTeX source, PDF and two figures), ten Python scripts (exact Fock-space checks, an interval-arithmetic certificate, Ising, crossover, dispersion and finite-size computations using NumPy, SciPy, mpmath and Matplotlib) with their outputs, the bibliography, a machine-readable index, a research-gate record, a review summary, a replay receipt and SHA-256 sums.</p><p><strong>Assurance.</strong> Written proofs with computational checks. Internal AI-assisted review only: a Claude review panel (editor, domain, perspective, devil's advocate), a methodology and line-by-line proof audit with independent code, a clean replay, one revision round with extensions, and a re-review with a proof audit of the new proofs. No Astra/Codex review took place. This is not peer review, independent reproduction or formal verification. Creator: Anonymous. Text CC0-1.0; code MIT.</p>",
+ "creators": [
+  {
+   "name": "Anonymous"
+  }
+ ],
+ "access_right": "open",
+ "license": "cc-zero",
+ "version": "0.1.0-candidate",
+ "publication_date": "2026-11-26",
+ "keywords": [
+  "bound energy",
+  "ergotropy",
+  "entanglement entropy",
+  "critical spin chains",
+  "boundary conformal field theory",
+  "free fermions",
+  "quantum thermodynamics",
+  "passive states",
+  "charge conservation"
+ ],
+ "notes": "Code (*.py and the CI workflow) is MIT; prose, manuscript, figures, results and records are CC0-1.0.",
+ "related_identifiers": [
+  {
+   "identifier": "https://github.com/ipitchford/critical-chain-bound-energy/tree/v0.1.0-candidate",
+   "relation": "isSupplementTo",
+   "scheme": "url"
+  },
+  {
+   "identifier": "https://evidencepress.org/releases/critical-chain-bound-energy/",
+   "relation": "isDocumentedBy",
+   "scheme": "url"
+  },
+  {
+   "identifier": "10.1209/epl/i2004-10101-2",
+   "relation": "references",
+   "scheme": "doi"
+  },
+  {
+   "identifier": "10.1088/1751-8121/aa9365",
+   "relation": "references",
+   "scheme": "doi"
+  },
+  {
+   "identifier": "10.1103/physreve.87.042123",
+   "relation": "references",
+   "scheme": "doi"
+  },
+  {
+   "identifier": "10.1007/s11139-020-00377-5",
+   "relation": "references",
+   "scheme": "doi"
+  },
+  {
+   "identifier": "10.1103/physreva.78.032329",
+   "relation": "references",
+   "scheme": "doi"
+  },
+  {
+   "identifier": "10.1088/1742-5468/2016/12/123103",
+   "relation": "references",
+   "scheme": "doi"
+  },
+  {
+   "identifier": "10.4007/annals.2011.174.2.12",
+   "relation": "references",
+   "scheme": "doi"
+  },
+  {
+   "identifier": "10.1088/1742-5468/2011/01/p01017",
+   "relation": "references",
+   "scheme": "doi"
+  },
+  {
+   "identifier": "10.1103/physrevlett.120.200602",
+   "relation": "references",
+   "scheme": "doi"
+  },
+  {
+   "identifier": "10.21468/scipostphys.11.2.031",
+   "relation": "references",
+   "scheme": "doi"
+  },
+  {
+   "identifier": "10.1209/0295-5075/81/57003",
+   "relation": "references",
+   "scheme": "doi"
+  },
+  {
+   "identifier": "10.1088/1367-2630/adf2d2",
+   "relation": "references",
+   "scheme": "doi"
+  },
+  {
+   "identifier": "10.1103/physrevx.12.021013",
+   "relation": "references",
+   "scheme": "doi"
+  },
+  {
+   "identifier": "10.1103/physrevb.107.075116",
+   "relation": "references",
+   "scheme": "doi"
+  },
+  {
+   "identifier": "10.1103/physreve.98.042121",
+   "relation": "references",
+   "scheme": "doi"
+  },
+  {
+   "identifier": "arXiv:hep-th/0411189",
+   "relation": "references",
+   "scheme": "arxiv"
+  }
+ ]
+}
