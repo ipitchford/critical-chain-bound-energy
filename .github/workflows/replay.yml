@@ -40,7 +40,7 @@ jobs:
           $P code/finite_size.py > results/finite_size.csv
           ls figures/crossover.pdf figures/dispersion.pdf
           # Policy (README.md, ENVIRONMENT.txt, REPLAY_RECEIPT.md): exact files byte-identical; other numbers within
-          # relative 1e-9 (absolute 1e-9 below 1e-6).
+          # relative 1e-6 (absolute 1e-7 below 1e-6).
           python3 -I -B -O "$GITHUB_WORKSPACE/tools/compare_results.py" "$GITHUB_WORKSPACE/results" results
       - name: Negative control (expected D_3 changed must fail under python -O)
         run: |

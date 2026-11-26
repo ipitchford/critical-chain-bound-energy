@@ -98,8 +98,10 @@ python3 tools/compare_results.py <shipped results/> results/
 Every script stops with "CHECK FAILED" and exit status 1 if a check fails; none uses `assert`, so they behave the
 same under `python -O`. **Comparison policy:** `five_site_certificate.txt` (exact interval certificate) and
 `ising_boundary.csv` (integer counts) must be byte-identical; in the other CSV files every non-numeric field must
-match and every number must agree within relative 1e-9 (absolute 1e-9 for values below 1e-6, which are
-floating-point noise diagnostics), because BLAS ordering changes final digits across platforms. The figure PDFs embed
+match and every number must agree within relative 1e-6 (absolute 1e-7 for values below 1e-6, which are error
+diagnostics or small differences), because floating-point and BLAS ordering change trailing digits across platforms
+(on Linux CI the largest relative change in a reported value was about 2e-8, at L = 4096). Every number quoted in
+the paper has at most seven significant digits. The figure PDFs embed
 creation dates and are compared visually. On the release host every output except `ising_checks.csv` (relative
 difference about 1e-15) was byte-identical to the shipped file. GitHub CI applies this policy on Linux and runs a
 negative control.

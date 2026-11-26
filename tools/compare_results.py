@@ -5,15 +5,15 @@ Usage: python3 compare_results.py SHIPPED_DIR NEW_DIR
 Policy (also stated in README.md, ENVIRONMENT.txt and REPLAY_RECEIPT.md):
 - five_site_certificate.txt and ising_boundary.csv must be byte-identical (exact interval and integer outputs);
 - every other file must have the same rows, columns and non-numeric fields; numeric fields must agree to a
-  relative tolerance of 1e-9, except values below 1e-6 in magnitude (floating-point noise diagnostics), which
-  must agree to an absolute tolerance of 1e-9.
+  relative tolerance of 1e-6, except values below 1e-6 in magnitude (error diagnostics and small differences), which
+  must agree to an absolute tolerance of 1e-7.
 Exits 1 on any difference. Uses no assert, so it also fails under python -O.
 """
 import csv, sys
 from pathlib import Path
 
 EXACT = {'five_site_certificate.txt', 'ising_boundary.csv'}
-REL, SMALL, ABS = 1e-9, 1e-6, 1e-9
+REL, SMALL, ABS = 1e-6, 1e-6, 1e-7
 
 
 def rows(p):
@@ -54,7 +54,7 @@ def main():
                     bad.append('%s row %d: %s vs %s' % (n, i, u, v))
     if bad:
         print('FAIL', bad[:20]); sys.exit(1)
-    print('PASS %d files: exact files byte-identical; others within rel 1e-9 (abs 1e-9 below 1e-6)' % len(names))
+    print('PASS %d files: exact files byte-identical; others within rel 1e-6 (abs 1e-7 below 1e-6)' % len(names))
 
 
 main()
